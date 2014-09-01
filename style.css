@@ -890,6 +890,10 @@ h3 {
 	/*line-height: 6em;*/
 }
 
+.icon-bar {
+	background: #fff !important;
+}
+
 .social {
 	position: relative;
 }
@@ -914,7 +918,7 @@ h3 {
 @media and (max-width: 500px) {
 	.header-caption {
 		text-indent: 0;
-		width: 100%;
+		/*width: 100%;*/
 	}
 }
 
@@ -996,10 +1000,16 @@ h3 {
 	border-radius: 5px;
 }
 
-.footer-wrap h2 {
+.footer-wrap ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.footer-wrap strong {
 	padding-top: 40px;
 	text-shadow: 1px 1px 4px rgba(202, 221, 214, 1);
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.3em;
 }
 
 .footer-wrap a, .footer-wrap a:visited {

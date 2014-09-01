@@ -18,9 +18,10 @@
 
 				<div class="col-md-8">
 
-					<h2>For a free and friendly quote:<br />
-						Call - (480)540-8551<br />
-						Or email:  360fulfillment@gmail.com</h2>
+					<ul>
+						<li><strong>For a free and friendly quote:</strong></li>
+						<li><strong>Call - (480)540-8551</strong></li>
+						<li><strong>Or email:  <a href="mailto:360fulfillment@gmail.com">360fulfillment@gmail.com</a></strong></li>
 
 				</div>
 
