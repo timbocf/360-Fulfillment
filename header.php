@@ -69,7 +69,12 @@
 
 		<div class="row">
 
-			<div class="col-md-4 graylink header-caption"><h3>CALL US TODAY <a href="tel:4805408551">480-540-8551</a></h3></div>
+			<div class="col-md-4 graylink header-caption">
+				<ul>
+					<li><h3>CALL US TODAY</h3></li>
+					<li><h3><a href="tel:4805408551">480-540-8551</a></h3></li>
+				</ul>
+			</div>
 
 		</div>
 
