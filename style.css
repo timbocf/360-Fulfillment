@@ -975,6 +975,7 @@ h3 {
 
 .service-row {
 	border-top: 5px solid #ffc000;
+	margin-bottom: 2em;
 }
 
 .service-row div {
@@ -992,12 +993,17 @@ h3 {
 	}
 }
 
-@media and (max-width: 750px) {
+@media and (max-width: 500px) {
 	.home-service-list {
 		line-height: 1.5em;
 		font-size: 1.5em;
 		padding-top: 50px;
+		margin-top: 50px;
 		padding-bottom: 2em;
+	}
+
+	.service-row {
+		margin-bottom: 2em;
 	}
 }
 
@@ -1025,6 +1031,7 @@ h3 {
 .footer-wrap {
 	background: #706c6b;
 	color: #000;
+	margin-top: 1.5em;
 	padding: 10px 10px 10px 20px;
 	text-align: center;
 	-webkit-border-radius: 5px;
