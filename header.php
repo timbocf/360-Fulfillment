@@ -29,7 +29,7 @@
 
 		<header>
 
-			<a href="/home/"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png" class="logo"></a>
+			<a href="/home/"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png"></a>
 
 			<div class="navbar">
 				<div class="container">
