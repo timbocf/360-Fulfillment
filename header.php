@@ -27,14 +27,14 @@
 
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'three-sixty' ); ?></a>
 
-		<header>
+		<header class="page-header">
 
-			<a href="/home/"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png"></a>
+			<a href="/home/" class="col-md-4"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png" class="img-responsive"></a>
 
 			<div class="navbar">
 				<div class="container">
 
-					<div class="navbar-header">
+					<div class="navbar-header col-md-8">
 
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-content">
 							<span class="sr-only">Toggle navigation</span>
