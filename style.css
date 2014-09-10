@@ -818,25 +818,20 @@ h3 {
 
 .page-header {
 	position: relative;
-}
-
-.navbar {
-	overflow: visible;
-	height: 3em;
-	border-bottom: 5px solid #000 !important;
-	z-index: 999;
+	padding-top: 0;
+	margin-top: 0;
 }
 
 @media screen and (min-width: 751px) {
 	.navbar {
 		position: relative;
 		font-size: 1.4em;
+		height: 80px;
+		border-bottom: 5px solid #000 !important;
 	}
 }
 
 .logo {
-	background: url("http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png") transparent;
-	background-repeat: no-repeat;
 	text-indent: -9999px;
 	z-index: 1000;
 }
@@ -846,69 +841,100 @@ h3 {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 300px;
-		width: 250px;
+		/*height: 300px;*/
+		/*width: 250px;*/
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.logo {
-		height: 150px;
-		width: 100px;
+		/*height: 150px;*/
+		/*width: 100px;*/
 	}
-}
 
-.nav a, .navbar a, .navbar-nav a {
-	color: #fff;
-	border-right-width: 1px;
-    border-style: solid;
-    -webkit-border-image: 
-    border-style: solid;
-      -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#69726c)) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(#fff, #69726c) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(#fff, #69726c) 1 100%;    
-    -o-border-image:
-      -o-linear-gradient(#fff, #69726c) 1 100%;
-    border-image:
-      linear-gradient(to bottom, #fff, #69726c) 1 100%;
+	.navbar,
+	.navbar-header {
+		/*background: #eee;*/
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
 }
 
 .noborder {
 	border: 0 !important;
 }
 
-.navbar, .nav, .navbar-nav {
-	background: #55cb76; /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1Y2I3NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxODhkMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  #55cb76 0%, #188d39 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#55cb76), color-stop(100%,#188d39)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #55cb76 0%,#188d39 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cb76', endColorstr='#188d39',GradientType=0 ); /* IE6-8 */
+@media and (max-width: 751px) {
+	.navbar, .nav, .navbar-nav {
+		background: #55cb76; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1Y2I3NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxODhkMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #55cb76 0%, #188d39 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#55cb76), color-stop(100%,#188d39)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #55cb76 0%,#188d39 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #55cb76 0%,#188d39 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cb76', endColorstr='#188d39',GradientType=0 ); /* IE6-8 */
+	}
 
-	/*line-height: 6em;*/
+	.nav a, .navbar a, .navbar-nav a {
+		color: #fff;
+		border-right-width: 1px;
+	    border-style: solid;
+	    -webkit-border-image: 
+	    border-style: solid;
+	      -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#69726c)) 1 100%;
+	    -webkit-border-image: 
+	      -webkit-linear-gradient(#fff, #69726c) 1 100%;
+	    -moz-border-image:
+	      -moz-linear-gradient(#fff, #69726c) 1 100%;    
+	    -o-border-image:
+	      -o-linear-gradient(#fff, #69726c) 1 100%;
+	    border-image:
+	      linear-gradient(to bottom, #fff, #69726c) 1 100%;
+	}
+}
+
+.navbar-toggle {
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
 }
 
 .icon-bar {
-	background: #fff !important;
+	background: #000 !important;
 }
 
 .social {
 	position: relative;
+	padding: 0 inherit !important;
 }
 
-.social:after {
-	content: url(images/fb-logo.png) no-repeat;
-	position: absolute;
-	top: 5px;
-	left: 100%;
+@media and (min-width: 751px) {
+	.social:after {
+		content: url(images/fb-logo.png) no-repeat;
+		position: absolute;
+		top: 5px;
+		left: 100%;
+		padding: 0 inherit !important;
+	}
 }
 
+@media and (max-width: 750px) {
+	.social:after {
+		content: '';
+	}
+
+	.nav>li>a {
+		text-align: right !important;
+	}
+}
 .header-caption {
 	z-index: 998;
 }
@@ -916,6 +942,14 @@ h3 {
 @media and (min-width: 751px) {
 	.header-caption {
 		text-indent: -8em;
+	}
+}
+
+@media and (max-width: 750px) {
+	.header-caption {
+		text-indent: -8em;
+		padding: 0;
+		font-size: 1em;
 	}
 }
 

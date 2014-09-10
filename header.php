@@ -29,21 +29,21 @@
 
 		<header class="page-header">
 
-			<a href="/home/" class="col-md-4"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png" class="img-responsive"></a>
+			<a href="/home/" class="col-xs-4"><img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/360-logo.png"></a>
 
 			<div class="navbar">
 				<div class="container">
 
-					<div class="navbar-header col-md-8">
+					<div class="navbar-header">
 
-						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-content">
+						<button class="navbar-toggle col-xs-2 col-xs-offset-6" type="button" data-toggle="collapse" data-target="#navbar-content">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
 
-						<nav id="navbar-content" class="collapse navbar-collapse col-md-8">
+						<nav id="navbar-content" class="collapse navbar-collapse col-xs-8">
 							<ul class="nav navbar-nav">
 								<li>
 									<a href="/home/">Home</a>
@@ -57,8 +57,8 @@
 								<li>
 									<a href="/contact-us/">Contact Us</a>
 								</li>
-								<li>
-									<a href="#todo" class="noborder"><!--class social-->Connect With Us <img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/fb-logo.png"></a>
+								<li class="social">
+									<a href="#todo" class="noborder"><!--class social-->Connect With Us <!--<img src="http://360fulfillmentnow.com/wp-content/themes/three-sixty/images/fb-logo.png">--></a>
 								</li>
 							</ul>
 						</nav>
