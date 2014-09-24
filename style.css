@@ -415,17 +415,17 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #333 !important;
 }
 
 a:visited {
-	color: purple;
+	/*color: purple;*/
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	/*color: midnightblue;*/
 }
 
 /*--------------------------------------------------------------
@@ -809,10 +809,6 @@ h3 {
 	text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
 
-.graylink a, .graylink a:visited {
-	color: #333;
-}
-
 
 /** HEADER **/
 
@@ -820,6 +816,7 @@ h3 {
 	position: relative;
 	padding-top: 0;
 	margin-top: 0;
+	border: 0 !important;
 }
 
 @media screen and (min-width: 751px) {
@@ -827,7 +824,13 @@ h3 {
 		position: relative;
 		font-size: 1.4em;
 		height: 80px;
-		border-bottom: 5px solid #000 !important;
+	}
+	.navbar-header {
+		border-bottom: 2px solid #000 !important;
+		background: #eee;
+	}
+	.nav a:hover {
+		background: #24be01 !important;
 	}
 }
 
@@ -860,6 +863,9 @@ h3 {
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 	}
+	.navbar, .nav, .navbar-nav, .nav li {
+		text-align: right !important;
+	}
 }
 
 .noborder {
@@ -867,7 +873,9 @@ h3 {
 }
 
 @media and (max-width: 751px) {
+
 	.navbar, .nav, .navbar-nav {
+
 		background: #55cb76; /* Old browsers */
 		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1Y2I3NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxODhkMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -881,6 +889,7 @@ h3 {
 	}
 
 	.nav a, .navbar a, .navbar-nav a {
+
 		color: #fff;
 		border-right-width: 1px;
 	    border-style: solid;
